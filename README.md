@@ -2,8 +2,9 @@
 
 > 这是基于 OpenCV 模板匹配的《家国梦》游戏自动化脚本。
 
-## 安装与运行
 
+## 安装与运行
+以下命令中，python是指python3，使用Linux而且默认python2的同学自行修改命令。Windows请无视本行。
 ```bash
 # 安装依赖
 python -m pip install uiautomator2 opencv
@@ -40,4 +41,18 @@ python -m pip install --pre weditor
 
 # 启动 Weditor
 python -m weditor
+```
+
+
+-------------
+偷懒 - 不想使用模拟器，不想修改屏幕坐标，又没有1920x1080分辨率的手机，可以使用adb修改设备的分辨率。
+```bash
+adb shell wm size 1080x1920
+adb shell wm density 240 （可选）
+```
+
+如果通过adb修改了分辨率，可以通过以下命令将手机分辨率改回去。
+```bash
+adb shell wm size reset
+adb shell wm density reset
 ```
