@@ -6,11 +6,11 @@ if __name__ == '__main__':
     targets = {
         # TargetType.Chair: 1,
         # TargetType.Box: 2,
-        # TargetType.Dogfood: 2,
+        TargetType.Dogfood: 1,
         # TargetType.Sofa: 3,
         # TargetType.Plant: 3,
         # TargetType.Microphone: 4,
-        # TargetType.Shoes: 5,
+        TargetType.Shoes: 5,
         # TargetType.Chicken: 6,
         # TargetType.Bottle: 4,
         # TargetType.Vegetable: 5,
@@ -24,14 +24,14 @@ if __name__ == '__main__':
         # TargetType.Grass:9,
         # TargetType.Tool: 8,
         # TargetType.Quilt: 9,
-        TargetType.Chair: 1,
-        TargetType.Wood: 9,
-        TargetType.Bottle: 5,
+        TargetType.Wardrobe: 1,
+        TargetType.Coal: 9,
+        # TargetType.Bottle: 5,
         TargetType.Vegetable: 4,
-        TargetType.Box: 2,
+        TargetType.Blanket: 2,
         TargetType.Food: 7,
         TargetType.Chicken: 6,
-        TargetType.Iron: 8,
+        TargetType.Cotton: 8,
         TargetType.Sofa: 3
     }
     # 此处的设备换成你自己的

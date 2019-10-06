@@ -67,6 +67,7 @@ class Automator:
                 print(e)
 
     def grabOnly(self):
+        # 建筑中，住房扫描频率最高，然后是商业，最后是工业，较适合普通品质的建筑
         try:
             while True:
                 self.d.swipe(294, 1184, 807, 961) # 1 - 3
@@ -101,6 +102,24 @@ class Automator:
             print("\n\nBYE!\n\n")
         except Exception as e:
             print(e)
+
+
+    def grabOnly2(self):
+        # 每5秒种扫描一次所有建筑，较适合史诗级建筑
+        try:
+            while True:
+                self.d.swipe(294, 1184, 807, 961) # 1 - 3
+                self.d.swipe(275, 935, 799, 687) # 4 - 6
+                self.d.swipe(304, 681, 787, 447) # 7 - 9
+                # 自定义每次收去金币后是否升级某个建筑
+                self._upgrade(5)
+                time.sleep(5)
+
+        except (KeyboardInterrupt, SystemExit):
+            print("\n\nBYE!\n\n")
+        except Exception as e:
+            print(e)
+
 
 
     def _swipe(self):
@@ -176,5 +195,5 @@ class Automator:
             sx, sy = result
             # 获取货物目的地的屏幕位置。
             ex, ey = self._get_target_position(target)
-            # 搬运货物。
-            self.d.swipe(sx, sy, ex, ey)
+            # 搬运货物.+4 & +10使起始位置像下移动。
+            self.d.swipe(sx+4, sy+10, ex, ey)

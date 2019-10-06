@@ -8,6 +8,8 @@ class TargetType(Enum):
     Chair = 'targets/Chair.jpg'
     Vegetable = 'targets/Vegetable.jpg'
     Bottle = 'targets/Bottle.jpg'
+    Coal = 'targets/Coal.jpg'
+    Cotton = 'targets/Cotton.jpg'
     Wood = 'targets/Wood.jpg'
     Food = 'targets/Food.jpg'
     Box = 'targets/Box.jpg'
@@ -24,4 +26,5 @@ class TargetType(Enum):
     Tool = 'targets/Tool.jpg'
     Microphone = 'targets/Microphone.jpg'
     Oil = 'targets/Oil.jpg'
-    
+    Wardrobe = 'targets/Wardrobe.jpg'
+    Blanket = 'targets/Blanket.jpg'
